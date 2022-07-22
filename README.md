@@ -21,7 +21,7 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
   - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#servo-code-explanation)
 
 
-3- [Controlling a Brushless DC Motor]https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#3--controlling-brushless-dc-motor
+3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#3--controlling-brushless-dc-motor
 ) 
 
   - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-circuit-diagram
@@ -31,7 +31,7 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
 
 ## 1- Controlling Stepper Motor
 
-### Driver
+### A4988 Driver
 
 Following is the pin diagram of the driver. MS1,Ms2 and MS3 are left unconnected if a complete revloution is intended.
 ![DriverPins](https://a.pololu-files.com/picture/0J10073.600.jpg?75d9ca5bb2e095e5c5f64350019e1b81

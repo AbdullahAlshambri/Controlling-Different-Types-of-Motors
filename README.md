@@ -1,6 +1,7 @@
 # Controlling a Stepper Motor via A4988 Driver
 
 These are two simple Arduino codes to control a stepper motor with a driver of the model A4988 and a servo motor. 
+
 1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-stepper-motor
 ) 
   - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#a4988-driver)

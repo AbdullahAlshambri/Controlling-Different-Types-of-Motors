@@ -1,6 +1,6 @@
-# Controlling a Stepper Motor via A4988 Driver
+# Controlling Different Types of Motors with an Arduino
 
-These are two simple Arduino codes to control a stepper motor with a driver of the model A4988 and a servo motor. 
+These are simple Arduino codes and diagrams to control a stepper motor, a servo motor, and a Brushless DC Motor.
 
 1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#1--controlling-stepper-motor
 ) 
@@ -30,6 +30,7 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
   - [BLDC Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
 
 ## 1- Controlling Stepper Motor
+To control a stepper motor, a driver is needed. A4988 driver is one of the most common drivers to be used.
 
 ### A4988 Driver
 
@@ -116,27 +117,42 @@ servo.attach(8);
 ```
 
 ## 3- Controlling Brushless DC Motor
+There are many controllers used to control the BLDC Motors. In this example, one direction ESC is used.
 
 ### BLDC Circuit Diagram
 
------
+![Diagram](https://user-images.githubusercontent.com/83937586/180501804-bb5e93a0-b8a5-4a72-b1cb-922952bf923f.png)
+
+
 
 ### BLDC Motor Code Explanation  
 
 1-the library Servo.h is imported.
 ```
 #include <Servo.h>
+#define SpeedPin A0
+#define MotorPin 5
 ```
-2- ----
+2- DC Motor is defined along with two variables to control the speed of the motor with a potentiometer.
 ```
----
+Servo Motor;
+int Speed = 0;
+int PotVal = 0;
 ```
-3- ----
+3- The Motor is attached.
 
 ```
-----
+void setup() {
+  Motor.attach(MotorPin); 
+  
+}
 ```
-4- ---
+4- The value is taken from the potentiometer, then mapped into a proper value before sending the signal to the driver.
 ```
-----
+void loop() {
+  PotVal = analogRead(SpeedPin);
+  Speed = map(PotVal, 0, 1023, 0, 180);
+  Motor.write(Speed);
+
+}
 ```

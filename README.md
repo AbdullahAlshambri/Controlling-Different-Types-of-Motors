@@ -24,10 +24,10 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
 3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#3--controlling-brushless-dc-motor
 ) 
 
-  - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-circuit-diagram
+  - [BLDC Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-circuit-diagram
 )
 
-  - [BLCD Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
+  - [BLDC Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
 
 ## 1- Controlling Stepper Motor
 

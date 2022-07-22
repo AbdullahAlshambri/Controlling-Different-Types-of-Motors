@@ -2,18 +2,29 @@
 
 These are two simple Arduino codes to control a stepper motor with a driver of the model A4988 and a servo motor. 
 
-[A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#a4988-driver)
+1- Controlling Stepper Motor
+  - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#a4988-driver)
 
-[Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-circuit-diagram
+  - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-circuit-diagram
 )
 
-[Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-code-explanation
+  - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-code-explanation
 )
 
-[Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
+2- Controlling Servo Motor
+
+  - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
 )
 
-[Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
+  - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
+
+
+3- Controlling Brushless DC Motor
+
+  - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
+)
+
+  - [BLCD Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
 
 ## A4988 Driver
 

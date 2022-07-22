@@ -24,10 +24,10 @@ These are simple Arduino codes and diagrams to control a stepper motor, a servo 
 3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#3--controlling-brushless-dc-motor
 ) 
 
-  - [BLDC Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-circuit-diagram
+  - [BLDC Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#bldc-circuit-diagram
 )
 
-  - [BLDC Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
+  - [BLDC Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#bldc-motor-code-explanation)
   
 
 ## 1- Controlling Stepper Motor

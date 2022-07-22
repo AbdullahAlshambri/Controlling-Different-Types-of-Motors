@@ -2,32 +2,33 @@
 
 These are simple Arduino codes and diagrams to control a stepper motor, a servo motor, and a Brushless DC Motor.
 
-1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#1--controlling-stepper-motor
+1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#1--controlling-stepper-motor
 ) 
-  - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#a4988-driver)
+  - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#a4988-driver)
 
-  - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#stepper-circuit-diagram
+  - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#stepper-circuit-diagram
 )
 
-  - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#stepper-code-explanation
+  - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#stepper-code-explanation
 )
 
-2- [Controlling a Servo Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#2--controlling-servo-motor
+2- [Controlling a Servo Motor](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#2--controlling-servo-motor
 ) 
 
-  - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#servo-circuit-diagram
+  - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#bldc-circuit-diagram
 )
 
-  - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#servo-code-explanation)
+  - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#bldc-motor-code-explanation)
 
 
-3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#3--controlling-brushless-dc-motor
+3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Different-Types-of-Motors#3--controlling-brushless-dc-motor
 ) 
 
   - [BLDC Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-circuit-diagram
 )
 
   - [BLDC Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
+  
 
 ## 1- Controlling Stepper Motor
 To control a stepper motor, a driver is needed. A4988 driver is one of the most common drivers to be used.
@@ -35,14 +36,17 @@ To control a stepper motor, a driver is needed. A4988 driver is one of the most 
 ### A4988 Driver
 
 Following is the pin diagram of the driver. MS1,Ms2 and MS3 are left unconnected if a complete revloution is intended.
+
 ![DriverPins](https://a.pololu-files.com/picture/0J10073.600.jpg?75d9ca5bb2e095e5c5f64350019e1b81
 )
+
 
 
     
 ### Stepper Circuit Diagram
 
 ![Diagram](https://github.com/AbdullahAlshambri/StepperMotorControl/blob/main/diagram.png?raw=true)
+
 
 
 
@@ -88,11 +92,14 @@ delay(1000);
 ```
 
 
+
 ## 2- Controlling Servo Motor
+
 
 ### Servo Circuit Diagram
 
 ![Diagram](https://github.com/AbdullahAlshambri/ServoMOTORControl/blob/main/Diagram.png?raw=true)
+
 
 
 ### Servo Code Explanation  
@@ -116,8 +123,10 @@ servo.attach(8);
 }
 ```
 
+
 ## 3- Controlling Brushless DC Motor
 There are many controllers used to control the BLDC Motors. In this example, one direction ESC is used.
+
 
 ### BLDC Circuit Diagram
 

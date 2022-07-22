@@ -1,8 +1,8 @@
 # Controlling a Stepper Motor via A4988 Driver
 
 These are two simple Arduino codes to control a stepper motor with a driver of the model A4988 and a servo motor. 
-
-1- Controlling Stepper Motor
+1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-stepper-motor
+) 
   - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#a4988-driver)
 
   - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-circuit-diagram
@@ -11,7 +11,8 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
   - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-code-explanation
 )
 
-2- Controlling Servo Motor
+2- [Controlling a Servo Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-servo-motor
+) 
 
   - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
 )
@@ -19,14 +20,17 @@ These are two simple Arduino codes to control a stepper motor with a driver of t
   - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
 
 
-3- Controlling Brushless DC Motor
+3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-brushless-dc-motor
+) 
 
   - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
 )
 
   - [BLCD Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
 
-## A4988 Driver
+## 1- Controlling Stepper Motor
+
+### A4988 Driver
 
 Following is the pin diagram of the driver. MS1,Ms2 and MS3 are left unconnected if a complete revloution is intended.
 ![DriverPins](https://a.pololu-files.com/picture/0J10073.600.jpg?75d9ca5bb2e095e5c5f64350019e1b81
@@ -34,13 +38,13 @@ Following is the pin diagram of the driver. MS1,Ms2 and MS3 are left unconnected
 
 
     
-## Stepper Circuit Diagram
+### Stepper Circuit Diagram
 
 ![Diagram](https://github.com/AbdullahAlshambri/StepperMotorControl/blob/main/diagram.png?raw=true)
 
 
 
-## Stepper Code Explanation  
+### Stepper Code Explanation  
 
 1-Pins Numbers and steps are determined.
 ```
@@ -82,13 +86,42 @@ delay(1000);
 ```
 
 
+## 2- Controlling Servo Motor
 
-## Servo Circuit Diagram
+### Servo Circuit Diagram
 
 ![Diagram](https://github.com/AbdullahAlshambri/ServoMOTORControl/blob/main/Diagram.png?raw=true)
 
 
-## Servo Code Explanation  
+### Servo Code Explanation  
+
+1-the library Servo.h is imported.
+```
+#include <Servo.h>
+```
+2- The servo is defined along with two varable pins to take read from the potentiometer and map it into an appropriate value.
+```
+Servo servo;
+int potpin = A0;
+int val;
+```
+3- The servo is attached to the arduino.
+
+```
+void setup() {
+servo.attach(8);
+
+}
+```
+
+## 3- Controlling Brushless DC Motor
+
+### Servo Circuit Diagram
+
+![Diagram](https://github.com/AbdullahAlshambri/ServoMOTORControl/blob/main/Diagram.png?raw=true)
+
+
+### Servo Code Explanation  
 
 1-the library Servo.h is imported.
 ```

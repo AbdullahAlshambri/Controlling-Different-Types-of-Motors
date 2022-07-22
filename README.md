@@ -2,36 +2,36 @@
 
 These are two simple Arduino codes to control a stepper motor with a driver of the model A4988 and a servo motor. 
 
-1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-stepper-motor
+1-[Controlling a Stepper Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#1--controlling-stepper-motor
 ) 
-  - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#a4988-driver)
+  - [A4988 Driver](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#a4988-driver)
 
-  - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-circuit-diagram
+  - [Stepper Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#stepper-circuit-diagram
 )
 
-  - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#stepper-code-explanation
+  - [Stepper Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#stepper-code-explanation
 )
 
-2- [Controlling a Servo Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-servo-motor
-) 
-
-  - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
-)
-
-  - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
-
-
-3- [Controlling a Brushless DC Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors/edit/main/README.md#1--controlling-brushless-dc-motor
+2- [Controlling a Servo Motor](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#2--controlling-servo-motor
 ) 
 
-  - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-circuit-diagram
+  - [Servo Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#servo-circuit-diagram
 )
 
-  - [BLCD Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-servo-motors/edit/main/README.md#servo-code-explanation)
+  - [Servo Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#servo-code-explanation)
+
+
+3- [Controlling a Brushless DC Motor]https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#3--controlling-brushless-dc-motor
+) 
+
+  - [BLCD Motor Circuit Diagram](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-circuit-diagram
+)
+
+  - [BLCD Motor Code Explanation](https://github.com/AbdullahAlshambri/Controlling-Stepper-and-Servo-Motors#bldc-motor-code-explanation)
 
 ## 1- Controlling Stepper Motor
 
-### A4988 Driver
+### Driver
 
 Following is the pin diagram of the driver. MS1,Ms2 and MS3 are left unconnected if a complete revloution is intended.
 ![DriverPins](https://a.pololu-files.com/picture/0J10073.600.jpg?75d9ca5bb2e095e5c5f64350019e1b81
@@ -117,37 +117,26 @@ servo.attach(8);
 
 ## 3- Controlling Brushless DC Motor
 
-### Servo Circuit Diagram
+### BLDC Circuit Diagram
 
-![Diagram](https://github.com/AbdullahAlshambri/ServoMOTORControl/blob/main/Diagram.png?raw=true)
+-----
 
-
-### Servo Code Explanation  
+### BLDC Motor Code Explanation  
 
 1-the library Servo.h is imported.
 ```
 #include <Servo.h>
 ```
-2- The servo is defined along with two varable pins to take read from the potentiometer and map it into an appropriate value.
+2- ----
 ```
-Servo servo;
-int potpin = A0;
-int val;
+---
 ```
-3- The servo is attached to the arduino.
+3- ----
 
 ```
-void setup() {
-servo.attach(8);
-
-}
+----
 ```
-4- The analog value is taken from the poteiometer, then it is mapped into values between 90 and 180. the mapped values determine the angle between the servo starting point and the point reached.
+4- ---
 ```
-void loop() {
-  val = analogRead(potpin);           
-  val = map(val, 0, 1023, 90, 180);
-  servo.write( val); 
-
-}
+----
 ```
